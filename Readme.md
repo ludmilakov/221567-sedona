@@ -1,7 +1,7 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Людмила Коваленко](https://up.htmlacademy.ru/adaptive/11/user/221567).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров] (https://htmlacademy.ru/profile/4er).
 
 ---
 
@@ -57,3 +57,4 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/221567-sedona
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/221567-sedona/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/221567-sedona?type=dev
+
