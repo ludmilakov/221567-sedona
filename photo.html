@@ -10,58 +10,63 @@
   <header class="page‐header">
     <nav class="main‐nav">
       <ul class="main‐nav__list">
-        <li class="main‐nav__item main-nav__close"> <a href="index.html">Главная</a> </li>
-        <li class="main‐nav__item main‐nav__item‐‐active"> <a>Фото и видео</a> </li>
-        <li class="main‐nav__item"> <a href="form.html">Форма отзыва</a> </li>
-        <li class="main‐nav__item"> <a href="">HTML Academy</a> </li>
+        <li class="main‐nav__item"> <a class="main-nav__link" href="index.html">Главная</a> </li>
+        <li class="main‐nav__item main‐nav__item‐‐active"> <a class="main-nav__link">Фото и видео</a> </li>
+        <li class="main‐nav__item"> <a class="main-nav__link" href="form.html">Форма отзыва</a> </li>
+        <li class="main‐nav__item"> <a class="main-nav__link" href="">HTML Academy</a> </li>
       </ul>
+      <button class="main-nav__close">Закрыть</button>
+      <a class="page‐header__logo" href="index.html"> <img src="img/logo.jpg" width="104" height="86" alt="city of sedona"> </a>
+      <button class="page‐header__burger"> </button>
     </nav>
-    <div class="page‐header__logo"> <img src="img/logo.jpg" width="104" height="86" alt="city of sedona"> </div>
-    <div class="page‐header__burger"> </div>
+
   </header>
-  <div class="triangle-mini">
-    <h1>Sedona</h1> </div>
+  <div class="triangle-bg">
+    <img src="img/triangle-mini.jpg" width="320" height="160" alt="Sedona">
+  </div>
   <section class="photo">
-    <h2>Фото и видео</h2>
+    <h2 class="photo-title">Фото и видео</h2>
     <p class="photo__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
-    <ul class="photo__list">
-      <li class="photo__item"> <img src="img/spaces.jpg" width="280" height="280" alt="spaces">
+      <div class="photo__item">
+        <img src="img/spaces.jpg" width="280" height="280" alt="spaces">
         <div class="photo__item-name">Неродные просторы</div>
         <div class="photo__item-author">Автор фото: Борис</div>
         <div class="photo__item-class">1350</div>
-      </li>
-      <li class="photo__item"> <img src="img/vegetation.jpg" width="280" height="280" alt="vegetation">
+      </div>
+      <div class="photo__item">
+        <img src="img/vegetation.jpg" width="280" height="280" alt="vegetation">
         <div class="photo__item-name">Местная растительность</div>
         <div class="photo__item-author">Автор фото: Сергей</div>
         <div class="photo__item-class">143</div>
-      </li>
-      <li class="photo__item"> <img src="img/road.jpg" width="280" height="280" alt="road">
+      </div>
+      <div class="photo__item">
+        <img src="img/road.jpg" width="280" height="280" alt="road">
         <div class="photo__item-name">Дорога на север</div>
         <div class="photo__item-author">Автор фото: Петр</div>
         <div class="photo__item-class">96</div>
-      </li>
-      <li class="photo__item"> <img src="img/bridge.jpg" width="280" height="280" alt="bridge">
+      </div>
+      <div class="photo__item">
+        <img src="img/bridge.jpg" width="280" height="280" alt="bridge">
         <div class="photo__item-name">Мост дьявола</div>
         <div class="photo__item-author">Автор фото: Антон</div>
         <div class="photo__item-class">254</div>
-      </li>
-    </ul>
+      </div>
   </section>
   <section class="video">
-    <h2>Все еще сомневаетесь?</h2>
+    <h2 class="photo-title">Все еще сомневаетесь?</h2>
     <p class="video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p> <video width="320" height="204" controls="controls">
         <source src="video/video.mp4">
       </video> </section>
   <div class="page-footer">
-    <div class="page-footer__hashtag"> #visitsedona </div> <span class="social‐links">
-      <a class="social‐link social‐link‐‐tw" href="">Мы в Twitter</a>
-      <a class="social‐link social‐link‐‐fb" href="">Мы в Фейсбуке</a>
-      <a class="social‐link social‐link‐‐youtube" href="">Мы в Youtube</a>
-    </span>
+    <div class="page-footer__hashtag"> #visitsedona </div>
+    <div class="page-footer__social‐links">
+      <a class="page-footer__social‐link page-footer__social‐link‐‐tw" href="">Мы в Twitter</a>
+      <a class="page-footer__social‐link page-footer__social‐link‐‐fb" href="">Мы в Фейсбуке</a>
+      <a class="page-footer__social‐link page-footer__social‐link‐‐youtube" href="">Мы в Youtube</a>
+    </div>
     <p class="page‐footer__copyright"> Разработано:
       <a class="HTMLAcademy-logo" href="https://htmlacademy.ru"> <img src="img/HTMLAcademy.svg" width="29" height="35" alt="HTMLAcademy"> </a>
     </p>
   </div>
 </body>
-
 </html>
