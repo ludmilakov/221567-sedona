@@ -1,12 +1,133 @@
+.main-nav {
+  width: 100%;
+  min-height: 50px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url(../img/icon-cross.svg);
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.main-nav--closed .main-nav__toggle {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff,
+              0 16px 0 0 #ffffff;
+}
+
+@media @mobile-widths-only {
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 70px;
+    z-index: 10;
+    height: 80vh;
+  }
+
+  .main-nav--opened .main-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 7px;
+    height: 100%;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    height: auto;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__item--active a {
+    text-align: left;
+  }
+
+}
+
 .main‐nav__list {
-  margin-top: 0;
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   color: @color-text-menu;
-  font-size: 18px;
+  background-color: @blue;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main‐nav__item {
+  width: 100%;
   text-align: center;
+  list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 14px;
+  border-bottom: 1px solid #678fa8;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: @color-text-menu;
+}
+
+@media @tablet-widths {
+
+.main‐nav__list {
+  flex-wrap: nowrap;
+  background-color: @body-bg;
+}
+
+.main-nav__link {
+  color: @body-text;
+  font-size: 14px;
+}
+
+}
+
+@media @desktop-widths {
+  .main-nav {
+    width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

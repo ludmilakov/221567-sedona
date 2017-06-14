@@ -1,3 +1,138 @@
 .forms {
   text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.forms__item {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #eeeeee;
+  margin-top: 20px;
+}
+
+.forms__item-title {
+  text-align: center;
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.forms__items-sign {
+  display: flex;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.forms__item-text {
+  height: 55px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  background-color: @color-reasons-item;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  padding-left: 20px;
+  font-family: 'PTSansBold';
+  font-size: 18px;
+}
+
+textarea[placeholder] {
+  padding-top: 15px;
+  resize: none;
+}
+
+.forms__item-emotions {
+  width: 280px;
+  background-color: @color-reasons-item;
+  border: none;
+}
+
+@media @tablet-widths {
+
+  .forms {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .forms__item {
+    border: none;
+  }
+
+  .forms__item:nth-child(3) {
+    order: -1;
+    width: 324px;
+  }
+
+  .forms__item:nth-child(1) {
+    width: 324px;
+  }
+
+  .forms__item:nth-child(2) {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .forms__item-title {
+    font-family: 'PTSansBold';
+    font-size: 20px;
+  }
+
+  .forms__item-emotions {
+    width: 648px;
+  }
+
+  .forms__error,
+  .forms__sent {
+    display: none;
+  }
+}
+
+@media @desktop-widths {
+  .forms {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    justify-content: space-between;
+  }
+
+  .forms__item {
+    width: 100%;
+  }
+
+  .forms__item-title {
+    font-size: 22px;
+  }
+
+  .forms__item:nth-child(1) {
+    width: 400px;
+
+    .forms__item-title {
+      text-align: left;
+    }
+  }
+
+  .forms__item:nth-child(3) {
+    width: 400px;
+  }
+
+  .forms__item-attraction {
+    width: 50px;
+    height: 50px;
+    border: none;
+  }
+
+  .forms__item-emotions {
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
 }

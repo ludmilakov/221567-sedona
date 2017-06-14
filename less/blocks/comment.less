@@ -1,0 +1,63 @@
+.comment {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comment__title {
+  font-family: 'PTSansBold';
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.comment__header {
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+@media @tablet-widths {
+
+  .comment__title {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .comment__explain {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
+  .comment__header {
+    border: none;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .comment__header {
+    width: 1200px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .comment__title {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .comment__explain {
+    width: 1200px;
+    padding-left: 380px;
+    padding-right: 380px;
+  }
+
+  .comment__title {
+    font-size: 22px;
+  }
+
+}
