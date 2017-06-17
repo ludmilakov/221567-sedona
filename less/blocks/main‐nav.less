@@ -6,13 +6,17 @@
 .main-nav__toggle {
   position: absolute;
   top: 15px;
-  right: 50px;
+  right: 16px;
   z-index: 11;
   width: 30px;
   height: 30px;
   font-size: 0;
+  border: none;
+  outline: inherit;
+  box-shadow: none;
   cursor: pointer;
   background-color: inherit;
+
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -115,7 +119,5 @@
 @media @desktop-widths {
   .main-nav {
     width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 }

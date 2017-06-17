@@ -1,14 +1,16 @@
 .forms {
+  width: 280px;
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .forms__item {
-  border: none;
   display: flex;
   flex-wrap: wrap;
+  border: none;
   border-bottom: 2px solid #eeeeee;
+  margin: 0;
   margin-top: 20px;
 }
 
@@ -20,18 +22,16 @@
 }
 
 .forms__items-sign {
-  display: flex;
   margin-bottom: 10px;
-  display: flex;
-  flex-wrap: wrap;
+  width: 50px;
 }
 
 .forms__item-text {
   height: 55px;
-  width: 100%;
   margin-bottom: 15px;
   border: none;
   background-color: @color-reasons-item;
+  width: 230px;
 }
 
 input[placeholder],
@@ -47,9 +47,22 @@ textarea[placeholder] {
 }
 
 .forms__item-emotions {
-  width: 280px;
+  padding: 0;
   background-color: @color-reasons-item;
   border: none;
+}
+
+.forms__item textarea {
+  padding: 0;
+  width: 100%;
+}
+
+.forms__error {
+  display: none;
+}
+
+.forms__sent {
+  display: none;
 }
 
 @media @tablet-widths {
@@ -57,19 +70,27 @@ textarea[placeholder] {
   .forms {
     display: flex;
     flex-wrap: wrap;
+    width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .forms__item {
     border: none;
+    width: 100%;
   }
 
   .forms__item:nth-child(3) {
     order: -1;
     width: 324px;
+    margin: 0;
+    padding: 0;
   }
 
   .forms__item:nth-child(1) {
     width: 324px;
+    margin: 0;
+    padding: 0;
   }
 
   .forms__item:nth-child(2) {
@@ -94,6 +115,7 @@ textarea[placeholder] {
 }
 
 @media @desktop-widths {
+
   .forms {
     display: flex;
     flex-wrap: wrap;
