@@ -1,16 +1,22 @@
 .page-footer {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 75px;
+  width: 320px;
+
 }
 
 .page-footer__hashtag {
+  width: 320px;
   font-size: 20px;
   font-family: 'PTSansBold';
   margin-bottom: 40px;
 }
 
 .page-footer__social‐links {
+  width: 320px;
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .page-footer__social‐link {
@@ -41,72 +47,94 @@
 }
 
 .copyright-wrapper {
-  position: relative;
-  width: 100%;
   display: flex;
-  justify-content: left;
-  margin-left: 100px;
+  flex-wrap: nowrap;
+  width: 320px;
+  justify-content: center;
+  height: 40px;
+  line-height: 40px;
+
+}
+
+.page‐footer__copyright {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 40px;
+  line-height: 40px;
+
 }
 
 .HTMLAcademy-logo {
-  position: absolute;
-  left: 100px;
-  top: 10px;
+  width: 29px;
+  height: 35px;
+  margin-left: 5px;
+
 }
 
 @media @tablet-widths {
   .page-footer {
-    display: flex;
-    padding-top: 13px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 45px;
+    width: 648px;
+    margin-top: 32px;
+    flex-wrap: nowrap;
   }
 
   .page-footer__hashtag {
-    width: 256px;
-    padding-left: 60px;
-    padding-top: 13px;
+    line-height: 42px;
+    width: 196px;
+    text-align: left;
   }
 
   .page-footer__social‐links {
     width: 256px;
-    padding-left: 70px;
+    justify-content: center;
   }
 
   .copyright-wrapper {
-    width: 256px;
-    padding-left: 6px;
+    width: 196px;
   }
+
+  .page‐footer__copyright {
+    min-height: 60px;
+    width: 196px;
+    margin-top: 0;
+    padding-top: 6px;
+    justify-content: flex-end;
+}
 
 }
 
 @media @desktop-widths {
 
   .page-footer {
-    margin-top: 47px;
+    margin-top: 29px;
     width: 1200px;
+    padding: 0;
   }
 
   .page-footer__hashtag {
     width: 400px;
-    padding-top: 13px;
-    padding-left: 11px;
+    line-height: 50px;
+    text-align: center;
   }
 
   .page-footer__social‐links {
     width: 400px;
-    padding-left: 85px;
+    justify-content: center;
   }
 
   .copyright-wrapper {
     width: 400px;
-    margin-left: 0;
     justify-content: flex-end;
-    padding-right: 90px;
   }
 
-  .HTMLAcademy-logo {
-    position: absolute;
-    right: -220px;
-    top: 4px;
-  }
+  .page‐footer__copyright {
+    margin-top: 6px;
+    width: 400px;
+    justify-content: flex-end;
+    padding-right: 42px;
+}
 
 }
