@@ -15,15 +15,16 @@
 }
 
 body {
+  display: block;
+  background-color: @body-desktop;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 21px;
   font-family: 'PTSans', sans-serif;
   color: @body-text;
   font-style: normal;
-  background-color: @body-bg;
-  width: 320px;
   text-align: center;
-  margin: auto;
   text-transform: uppercase;
 }
 
@@ -32,27 +33,25 @@ img {
   height: auto;
 }
 
-.main-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+.page-wrapper {
+  margin: auto;
+  width: 320px;
+  background-color: @body-bg;
+  box-shadow: 0px 0px 5px @shadow;
 }
 
 @media @tablet-widths {
-  body {
+
+  .page-wrapper {
     width: 768px;
   }
+
 }
 
 @media @desktop-widths {
-  body {
-    width: 100%;
-    background-color: @body-desktop;
-  }
 
   .page-wrapper {
-    margin: auto;
-    background-color: @body-bg;
     width: 1200px;
-    box-shadow: 0px 0px 5px @shadow;
   }
+
 }
