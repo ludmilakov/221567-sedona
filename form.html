@@ -47,47 +47,76 @@
     </div>
       <form class="forms" name="comment" action="https://echo.htmlacademy.ru/" class="comments__forms-item">
         <fieldset class="forms__item">
-          <legend class="forms__item-title">Представьтесь</legend>
-          <label for="name" class="forms__items-sign">Имя*: </label>
-          <input id="name" class="forms__item-text" type="text" required placeholder="Петр" name="name">
-          <label for="surname" class="forms__items-sign">Фамилия*:</label>
-          <input id="surname" class="forms__item-text" type="text" required placeholder="Иванов" name="surname">
-          <label for="patronymic" class="forms__items-sign">Отчество:</label>
-          <input id="patronymic" class="forms__item-text" type="text" name="patronymic" placeholder="Александрович">
+            <legend class="forms__item-title">Представьтесь</legend>
+            <div class="forms__item-group">
+              <label for="name" class="forms__items-sign">Имя*: </label>
+              <input id="name" class="forms__item-text" type="text" required placeholder="Петр" name="name">
+            </div>
+            <div class="forms__item-group">
+              <label for="surname" class="forms__items-sign">Фамилия*:</label>
+              <input id="surname" class="forms__item-text" type="text" required placeholder="Иванов" name="surname">
+            </div>
+            <div class="forms__item-group">
+              <label for="patronymic" class="forms__items-sign">Отчество:</label>
+              <input id="patronymic" class="forms__item-text" type="text" name="patronymic" placeholder="Александрович">
+            </div>
         </fieldset>
-        <fieldset class="forms__item">
-          <legend class="forms__item-title">Контактная информация</legend>
-          <label for="tel" class="forms__items-sign">Контактный телефон*:</label>
-          <input id="tel" class="forms__item-text" type="tel" name="tel" required placeholder="Введите телефон">
-          <label for="email" class="forms__items-sign">Электронная почта*:</label>
-          <input id-"email" class="forms__item-text" type="email" name="email" required placeholder="Введите e-mail">
+        <fieldset class="forms__item forms__item--cont">
+          <legend class="forms__item-title forms__item-title--contacts">Контактная информация</legend>
+          <div class="forms__item-contacts">
+            <label for="tel" class="forms__items-sign">Контактный телефон*:</label>
+            <input id="tel" class="forms__item-text" type="tel" name="tel" required placeholder="Введите телефон">
+          </div>
+          <div class="forms__item-contacts">
+            <label for="email" class="forms__items-sign">Электронная почта*:</label>
+            <input id-"email" class="forms__item-text" type="email" name="email" required placeholder="Введите e-mail">
+          </div>
         </fieldset>
-        <fieldset class="forms__item">
+        <fieldset class="forms__item forms-item__group-radio">
           <legend class="forms__item-title">Ваше общее впечатление:</legend>
-          <input id="positive" class="forms__items-radio" type="radio" name="positive" value="positive">
-          <label for="positive" class="forms__items-sign">Скорее положительное</label>
-          <input id="negative" class="forms__items-radio" type="radio" name="negative" value="negative">
-          <label for="negative" class="forms__items-sign">Скорее отрицательное</label>
-          <input id="dontknow" class="forms__items-radio" type="radio" name="dontknow" value="dontknow">
-          <label for="dontknow" class="forms__items-sign">Затрудняюсь ответить</label>
+          <div class="forms__item--emotions">
+            <input id="positive" class="forms__items-radio" type="radio" name="positive" value="positive">
+            <label for="positive" class="forms__items-sign">Скорее положительное</label>
+          </div>
+          <div class="forms__item--emotions">
+            <input id="negative" class="forms__items-radio" type="radio" name="negative" value="negative">
+            <label for="negative" class="forms__items-sign">Скорее отрицательное</label>
+          </div>
+          <div class="forms__item--emotions">
+            <input id="dontknow" class="forms__items-radio" type="radio" name="dontknow" value="dontknow">
+            <label for="dontknow" class="forms__items-sign">Затрудняюсь ответить</label>
+          </div>
         </fieldset>
-        <fieldset class="forms__item">
+        <fieldset class="forms__item forms-item__group-checkbox">
           <legend class="forms__item-title">Посещенные достопримечательности</legend>
-          <input id="bridge" class="forms__item-attraction" type="checkbox" name="attraction" value="bridge">
-          <label for="bridge" class="forms__items-sign">Мост дьявола</label>
-          <input id="park" class="forms__item-attraction" type="checkbox" value="park" name="attraction">
-          <label for="park" class="forms__items-sign">Слайд-парк</label>
-          <input id="mountain" class="forms__item-attraction" type="checkbox" value="mountain" name="attraction">
-          <label for="mountain" class="forms__items-sign">Гора-Колокол</label>
-          <input id="rocks" class="forms__item-attraction" type="checkbox" value="rocks" name="attraction">
-          <label for="rocks" class="forms__items-sign">Красные скалы</label>
+            <div class="forms-group__flex-container">
+              <div class="forms__item-checkbox">
+                <input id="bridge" class="forms__item-attraction" type="checkbox" name="attraction" value="bridge">
+                <label for="bridge" class="forms__items-sign">Мост дьявола</label>
+              </div>
+              <div class="forms__item-checkbox">
+                <input id="park" class="forms__item-attraction" type="checkbox" value="park" name="attraction">
+                <label for="park" class="forms__items-sign">Слайд-парк</label>
+              </div>
+              <div class="forms__item-checkbox">
+                <input id="mountain" class="forms__item-attraction" type="checkbox" value="mountain" name="attraction">
+                <label for="mountain" class="forms__items-sign">Гора-Колокол</label>
+              </div>
+              <div class="forms__item-checkbox">
+                <input id="rocks" class="forms__item-attraction" type="checkbox" value="rocks" name="attraction">
+                <label for="rocks" class="forms__items-sign">Красные скалы</label>
+              </div>
+            </div>
         </fieldset>
-        <fieldset class="forms__item">
-          <h2 class="comment__title">Опишите свои эмоции:</h2>
+        <fieldset class="forms__item-textarea">
+          <h2 class="comment__title comment__title--emotions">Опишите свои эмоции:</h2>
           <textarea class="forms__item-emotions" name="emotions" placeholder="Опишите подробно все свои восторги" rows="6">
           </textarea>
         </fieldset>
         <input class="button" type="submit" value="Отправить отзыв" name="filter-button">
+        <div class="reference">
+          * - обязательные поля
+        </div>
         <div class="forms__error">
           <h2 class="comment__title">Что-то пошло не так!</h2>
           <p class="forms__error-explain">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
